@@ -1,0 +1,11 @@
+services:
+  go-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: to-do-list-app
+    # ports:
+    #   - "8080:8080"
+    
+    # env_file:
+    #   - .env
