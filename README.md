@@ -49,31 +49,31 @@ For a containerized environment, use Docker Compose. This will build the Docker 
 ```sh
 docker-compose up --build
 ```
-#### Usage
+### Usage
 The application's executable is your project folder itself. You can run commands by typing go run . or, if using Docker, by running commands within the container.
 
-### Using Docker Compose:
+#### Using Docker Compose:
 To run commands with Docker Compose, you can use docker-compose run.
 
-## Add a Task:
+#### Add a Task:
 
 ```sh
 
 docker-compose run --rm go-app add "Buy groceries from the market"
 ```
-## List All Tasks:
+#### List All Tasks:
 
 ```sh
 
 docker-compose run --rm go-app list
 ```
-## Complete a Task:
+#### Complete a Task:
 
 ```sh
 
 docker-compose run --rm go-app done 1
 ```
-## Remove a Task:
+#### Remove a Task:
 
 ```sh
 
@@ -82,15 +82,15 @@ docker-compose run --rm go-app remove 1
 ### Using the Go Executable:
 If you prefer to run it without Docker, use go run.
 
-## Add a Task:
+#### Add a Task:
 
 ```sh
 go run . add "Go to the gym"
 ```
-## List All Tasks:
+#### List All Tasks:
 
 ```sh
 go run . list
 ```
-#### How It Works
+## How It Works
 The application stores your to-do tasks in a simple JSON file named .todo.json within your home directory (~). The Dockerfile creates a lightweight, production-ready image by using a multi-stage build process. This ensures that the final image contains only the compiled application and a minimal base OS, keeping the size small and efficient.
