@@ -30,8 +30,8 @@ To run this application, you need to have the following tools installed on your 
 #### 1. Clone the Repository
 
 ```sh
-git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git)
-cd YOUR_REPO_NAME
+git clone [https://github.com/burhan-er/to-do-list-backend.git]
+cd to-do-list-backend
 ```
 #### 2. Run with Go (Without Docker)
 If you prefer to run the application directly on your machine, first initialize the Go module and install dependencies.
